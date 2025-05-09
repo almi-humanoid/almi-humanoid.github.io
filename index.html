@@ -43,6 +43,7 @@
   
   }
 
+
   .video-item {
     text-align: center;
   }
@@ -59,6 +60,22 @@
     font-size: 16px;
     color: #222;
   }
+
+
+  .grid-container2 {
+    width: 150%;
+    max-width: 150%;;
+    padding: 40px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    gap: 30px;
+
+    justify-content: center;
+    align-items: center;
+  
+  }
+
 </style>
 
 
@@ -222,7 +239,7 @@
                  preload
                  autoplay loop playsinline controls
                  width="75%">
-            <source src="./static/videos/505_1745192182_raw.mp4"
+            <source src="./static/videos/eng.mp4"
                     type="video/mp4">
           </video>
       </div>
@@ -295,8 +312,13 @@
 
           <h2 class="title is-3">Experiments</h2>
         </div>
+<br>
+
+        <div class="columns is-centered has-text-centered">
 
 
+          <h3 class="title is-4">Motion Tracking</h3>
+        </div>
       <div class="container is-max-desktop" style="display: flex;justify-content: center; align-items: center;">
         <!-- Abstract. -->
         <div class="columns is-centered has-text-centered" style="display: flex; justify-content: center; align-items: center;">
@@ -398,9 +420,72 @@
           </div>
         </div>
       </div>
+<br>
+
+
+
+
+
+      <div class="columns is-centered has-text-centered">
+        <h3 class="title is-4">Loco-manipulation Tasks</h3>
+      </div>
+      </div>
+<br>
+<br>
+
+
+      <div class="container is-max-desktop" style="display: flex;justify-content: center; align-items: center;">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered" style="display: flex; justify-content: center; align-items: center;">
+          <div class="column is-four-fifths" style="display: flex; justify-content: center; align-items: center;">
+
+
+
+          <div class="grid-container2" >
+            <!-- 示例 20 个视频项 -->
+            <!-- 你可以替换 video src 为自己的路径，替换 caption 为提示语 -->
+            <!-- 这里只演示前两个，剩下你可以复制粘贴扩展 -->
+            <div class="video-item">
+              <video src="./static/videos/loco-manipulation-video/kitchen.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">Kitchen Manipulation Tasks</div>
+            </div>
+            <div class="video-item">
+              <video src="./static/videos/loco-manipulation-video/water.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">Pouring Water Task</div>
+            </div>
+            <div class="video-item">
+              <video src="./static/videos/loco-manipulation-video/box.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">Carrying Box Task</div>
+            </div>      
+            <div class="video-item">
+              <video src="./static/videos/loco-manipulation-video/clean.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">Cleaning the Floor Task</div>
+            </div>
+            <div class="video-item">
+              <video src="./static/videos/loco-manipulation-video/folder.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">Office Task</div>
+            </div>      
+            <div class="video-item">
+              <video src="./static/videos/loco-manipulation-video/door.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">Opening Door Task</div>
+            </div>      
+            <!-- 继续添加剩下的视频项 -->
+            <!-- ...直到第 20 个 -->
+        
+          </div>
+            
+          </div>
+        </div>
       </div>
 
 
+
+
+
+
+<br>
+<br>
+<br>
       <div class="container is-max-desktop">
         <!-- Abstract. -->
         <div class="columns is-centered has-text-centered">
